@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background: linear-gradient(rgba(14, 209, 216, 0.445),rgba(29, 200, 212, 0.6)),url(./images/wall4.png);
+    object-fit: cover;
+    height: 150vh;
+    width: 100%;
+}
+nav ul li a{
+    float: left;
+    clear: left;
+    color: rgb(0, 255, 242);
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    clear: left;
+    margin: 25px 35px;
+}
+nav{
+    background-color:transparent;
+    height: 10vh;
+    transition: 1s;
+}
+nav:hover{
+    background: crimson;
+
+}
+nav li a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.contain{
+    margin-left: 25px;
+    color: aqua;
+    font-size: 33px;
+    font-weight: 500;
+}
+.discrip{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 26px;
+    height: 59vh;
+}
+@keyframes ggg{
+    0%{
+        opacity: 0;
+        transform: (0px);
+    }
+    100%{
+        opacity: 1;
+        transform: (100px);
+    }
+}
+form{
+    border: 2px solid skyblue;
+    border-radius: 35px;
+    width: 20%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    padding: 10px;
+    box-shadow: 2px 5px 12px purple;
+}
+input{
+    margin: 9px;
+    padding: 7px;
+    border-radius: 7px;
+    border-right: 4px solid rgb(27, 27, 27);
+    border-bottom: 4px solid rgb(19, 19, 19);
+    box-shadow: 2px 5px 5px rgb(46, 7, 51);
+    width: 90%;
+    font-size: 17px;
+}
+textarea{
+    border: 2px solid black;
+    border-radius: 23px;
+    color: black;
+    font-size: 20px;
+
+}
+input[type="submit"]{
+    background-color: rgb(52, 53, 52);
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+form{
+    display: inline-table;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 25px;
+}
+.fa{
+    font-size: 35px;
+    align-items: center;
+    color: rgb(194, 206, 205);
+
+}
+.fa i{
+    color: white;
+}
+.contact p{
+    color: black;
+    font-size: 27px;
+}
+#skills p {
+    margin: 30px;
+
+}
+#skills p a{
+    padding: 10px;
+}
+@media screen and (max-width:600px) {
+    h2{
+        font-size: 23px;
+        
+    }
+    span{
+        font-size: 30px;
+        margin-left: 65px;
+    }
+    nav ul li{
+        margin: 5px 15px;
+        /* float: left; */
+
+        /* clear: right; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+nav{
+    background-color: crimson;
+    height: 5vh;
+}
+ /* text lai (tyo gaurab lai modify yeha bata garnee) */
+ /* teslai maile id gau deko xu so  */
+ #gau{
+     font-size: 35px !important;
+     animation-name: ggg;
+     animation-iteration-count: infinite;
+     animation-delay: 1s;
+    animation-direction: alternate-reverse;
+ }
+ #gau b{
+     font-size: 35px;
+     animation-name: ggg;
+     animation-iteration-count: infinite;
+     animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    margin-top: 65px !important;
+ }
+ #foo{
+     margin-top: 75px !important;
+ }
+ img{
+     object-fit: cover !important;
+     overflow: hidden;
+     height: 100%;
+     width: 20% !important;
+ }
+ @keyframes ggg{
+     0%{color: transparent;}
+     50%{color: black;}
+     100%{color: blueviolet;}
+ }
+ .contact{
+     width: 80% !important;
+     
+ }
+ .discrip{
+     font-size: medium;
+ }
+ #skills{
+     width: 80% !important;
+ }
+}
