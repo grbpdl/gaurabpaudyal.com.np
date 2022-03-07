@@ -4,9 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gaurab P.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-    <p>Hello world</p>
+<body style="background-color: rgb(14, 104, 104);">
+    <div class="head">
+        <nav>
+            <ul>
+                <li><a href="#foo">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        <div class="contain">
+            <h2>नमस्कार 🙏 <br> My Name Is </h2>
+            <span style="color: black; font-size: 65px; font-weight: bold; font-family: cursive; box-shadow: 2px 5px 10px rgb(153, 66, 235); -webkit-text-stroke: 2px purple; margin-left: 25px; " id="gau">
+                Ga<b style="color:white; -webkit-text-stroke: 2px crimson;">urab</b> Pa<b style="color:white; -webkit-text-stroke: 2px crimson;">udyal</b>
+            </span>
+            <div class="discrip">
+                I am <b style="color: crimson; text-transform: uppercase;"> Computer </b> Student
+            </div>
+        </div>
+        <hr>
+        <div class="post">
+            <form action="backend.php" method="post" id="foo" style="transition: 2s;">
+              <h3 style="color: rgb(2, 245, 225); text-align: center; font-family: cursive; "> Get In Touch</h3>
+                <p>
+
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                </p>
+                <p>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email Address" required>
+                </p>
+                <textarea name="text" id="name" cols="30" rows="10" style="color: black;" placeholder="  Your Message Here..." required></textarea>
+                <br>
+                <p>
+                    <input type="submit" value="Sent" id="submit" onclick="checkmsg">
+                </p>
+                <script>
+                    function checkmsg(){
+                        document.getElementById("submit").innerHTML="Thank you for messaging us";
+                    }
+                </script>
+            </form>
+            <form action="#" style="width: 28%; " class="contact">
+                <h3 style="text-align: center; font-size: 26px; font-family: cursive; color: rgb(5, 255, 213);">Contact Me</h3>
+                <p>
+
+                    <i class="fa fa-address-book"></i>
+                        <br>Gaurab Poudyal <br>
+                        Phone: 9866134111 <br>
+                        Email: Gaurab@gmail.com <br>
+                        Post Box: 005-234-990
+                    </p>
+                    <br>
+                <p>
+                    <i class=" fa fa-map-marker"></i>
+                    <br>Balkumari-13,<br> Lalitpur Nepal <br>
+                          P Address: Kalikanagar-10, <br>
+                        Butwal, Nepal 
+                </p>
+                <p>
+                    <i class="fa fa-info-circle"></i><br>Get <a href="#" style="color: rgb(8, 209, 199); text-decoration: none;">More</a> About Me 
+                </p>
+            </form>
+            <!-- <form action="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore id magnam dolor non asperiores similique ipsum amet consequuntur est harum hic labore ipsam nam, soluta esse, dolorum doloremque ex. Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptatum aliquid! Eaque laborum deleniti dolorum consequuntur, repellat repellendus atque necessitatibus, omnis, placeat ipsum molestiae maiores sint nobis sit aut minima. loe
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, molestiae! Cupiditate numquam eius ex asperiores, minus excepturi quidem obcaecati blanditiis architecto non eaque vero nostrum ad placeat alias similique enim?
+            </form> -->
+            <form action="" id="skills" style="width: 28%;">
+                <h3 style="color: aqua; font-family: cursive; text-align: center;">My Skills Till Date</h3>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px; color: transparent;"> <b style="color: crimson;">HTML</b> ............................... <b style="color: crimson;">70%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">CSS</b> _____________ <b style="color: crimson;">65%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">PYTHON</b> .................................... <b style="color: crimson;">80%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">PHP</b> ...___________... <b style="color: crimson;">40%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">JAVASCRIPT</b> .... <b style="color: crimson;">30%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">MYSQL</b> ..<b style="color: crimson;">20%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">MYSQL</b> ..<b style="color: crimson;">20%</b></a>
+                </p>
+                <p>
+
+                    <a href="#" style="background-color: black;border-radius: 25px;color: transparent;"> <b style="color: crimson;">SKILLS LOADING</b>__________<b style="color: crimson;">100%</b></a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <small style="text-align: center; position: absolute; bottom: 0px; right: 5px;">&copy;2022 Gaurab Poudyal</small>
+    <style>
+        .about{
+            height: 80vh;
+            width: 100%;
+            margin-top: 40vh;
+            font-size: 45px;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <!-- yo chai trial ko lagi gareko hai so aafai bujha -->
+    <!-- <hr> -->
+    <!-- <div class="about">
+        <div class="about">
+            <img src="./images/fbb.jpg" height="400px" width="400px" style="border-radius: 50%;" alt="" srcset="">            
+        </div>
+        <div class="discrippp">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, vitae distinctio quos amet maiores expedita praesentium quod perspiciatis atque ipsa ut eius reiciendis quis nemo magni iste quaerat eligendi unde.
+        </div>
+    </div> -->
+    
 </body>
 </html>

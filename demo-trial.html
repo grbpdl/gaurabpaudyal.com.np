@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <title>Official Port</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family:p; */
+        }
+        .header{
+            width: 100%;
+            height: 300vh;
+            background-image: linear-gradient(rgba(69, 178, 197, 0.438),rgba(79, 179, 84, 0.342)),url("images/background.jpg");
+            background-position: right;
+            background-size: cover;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-weight: 600px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(0, 248, 248);
+            font-size: 23px;
+            /* background-color: blue; */
+            padding: 17px;
+            width: 100%;
+            /* width: fit-content; */
+            /* border: 2px solid skyblue; */
+            /* margin: 5px; */
+            border-radius: 12px;
+        }
+        nav ul li a:hover{
+            color: white;
+            background-color: transparent;
+            transition: 1s;
+        }
+        nav ul li{
+            margin: 60px 2px;
+        }
+        nav{
+            /* background-color: blue; */
+            border: 2px solid rgb(23, 173, 73);
+            width: 10%;
+            height:80%;
+            position: fixed;
+        }
+        .post{
+            height: 70vh;
+            background-color: aquamarine;
+        }
+        .name{
+            color: white;
+            font-size: 35px;
+            margin-left: 10rem;
+        }
+        .name b{
+            margin-left: 1rem;
+            margin-top: 3rem;
+            -webkit-text-stroke: 2px cyan;
+            font-size: 65px;
+            transition: 2s;
+        }
+        .slide{
+            animation: grb 2s linear forwards;
+        }
+        @keyframes grb{
+            0%{
+                transform: translate(100px);
+                opacity: 0;
+                
+            }
+            100%{
+                transform: translate(100px);
+                opacity: 1;
+            }
+        }
+        .links{
+            margin: 30px 2px;
+        }
+        .links a{
+            border: 2px solid rgb(255, 21, 21);
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 33px;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+            /* margin-top: 12px; */
+            background:aqua;
+            text-transform: up;
+            margin-top: 25px;
+        }
+        .b1 , .b2 , .b3 , .b4, .b5{
+            animation: grb 1s linear forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">BIO</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">SPECIAL</a></li>
+            </ul>
+        </nav>
+        <div class="name">
+         <h3>नमस्कार 🙏 <br> 
+            My Name is  </h3><br>
+            <b class="b1 slide">GAURAB</b>
+            <!-- <b class="b2">U</b>
+            <b class="b3">U</b>
+            <b class="b4">R</b>
+            <b class="b5">A</b>
+            <b class="b6">B</b> -->
+            <br>
+            <b class="b2 slide">POUDYAL</b>
+            <p style="color: rgb(255, 255, 255); font-size: 29px;">I am <span style="color: crimson;">Computer</span> Student</p>
+            <div class="links">
+                <a href="#">Learn More</a> <small style="font-size: 27px; color: black;">OR</small>
+                <a href="#">Download CV</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="post">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam earum tenetur, aliquam ut temporibus autem reiciendis labore voluptate modi qui in deleniti culpa quibusdam? Delectus quas officia doloremque ullam labore?
+        </div>
+    </div>
+</body>
+</html>
