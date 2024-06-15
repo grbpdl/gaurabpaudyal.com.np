@@ -1,186 +1,844 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Gaurab Paudyal </title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-  <!-- Move to up button -->
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
-  <!-- navgaition menu -->
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#">Welcome</a></div>
-      <ul class="menu">
-          <li><a href="#home">Home</a></li>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaurab Paudyal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+<!-- ====================================================Desktop navbar ====================================================================================================-->
+
+    <nav id="desktop-nav">
+      <a href="#"><div class="logo">Gaurab Paudyal</div></a>
+      <div>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#experience-skills">Experience & Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#awards">Awards</a></li>
           <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
+        </ul>
+      </div>
+    </nav>
+    <!-- ======================================================Hamburger Menu for responsive web design =========================================================-->
+    <nav id="hamburger-nav">
+      <div class="logo">Gaurab Paudyal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience-skills" onclick="toggleMenu()">Experience & Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#awards" onclick="toggleMenu()">Awards</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======================================================Profile Section=========================================================-->
+   
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/gaurabcircle.png" alt="Gaurab Paudyal profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Namaste, I'm</p>
+        <h1 class="title">Gaurab Paudyal</h1>
+        <p class="section__text__p2">Computer Engineer X Standup Comedian</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1HLfqeVgnxrF9sPqdo_7lVTzyIaJ3MiNP/view?usp=sharing')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://linkedin.com/in/gaurabpaudyal" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/grbpdl" target="_blank">
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+          />
+        </a>
+          <a href="https://instagram.com/paudyal_jr" target="_blank">
+          <img
+            src="./assets/instagram.png"
+            alt="My Instagram profile"
+            class="icon"
+           
+          />
+        </a>
+        </div>
+      </div>
+    </section>
+
+ <!-- ======================================================About Section=========================================================-->
+   
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/gaurab_hult.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Full Stack Developer and Designer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />Computer Engineering</p>
+            </div>
           </div>
-      </ul>
-      <div class="media-icons">
-        <a href="https://github.com/grbpdl"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/gaurabpaudyal/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/paudyal_jr/"><i class="fab fa-instagram"></i></a>
-        
+          <div class="text-container">
+            <p>
+              Full Stack MERN Developer, Flutter App Developer, UI/UX Designer, Graphics & Motion Designer, Blog Writer, Data Science Enthusiast, and AI Learner.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience-skills'"
+      />
+    </section>
 
-<!-- Home Section Start -->
- <section class="home" id="home">
-   <div class="home-content">
-     <div class="text">
-       <div class="text-one">Namaste,</div>
-       <div class="text-two">I'm Gaurab Paudyal</div>
-       <div class="text-three">Designer,Writer and Data Science enthusiast</div>
-     </div>
-     <div class="button">
-       <button>Lets play a chess game together</button>
-     </div>
-   </div>
- </section>
 
-<!-- About Section Start -->
-<section class="about" id="about">
-  <div class="content">
-    <div class="title"><span>About Me</span></div>
-  <div class="about-details">
-    <div class="left">
-      <img src="images/about.jpg" alt="">
-    </div>
-    <div class="right">
-      <div class="topic">A computer engineer figuring things out</div>
-      <p>Hello there! There are few things I truly love and enjoy doing it beside sex is Designing.I am a Graphics Designer,UI/UX Designer and Motion Designer.I am also a data science enthusiast.Time and again I get fascinated by AI stuffs.I am currently manifesting to be a Data Scientist/Analyst.I am also into writting blogs.Beside these I do Standup Comedy,write skits,scripts,songs,poems and also creating content.</p>
-      <div class="button">
-        <button>Download CV</button>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
-
-<!-- My Skill Section Start -->
-<!-- Section Tag and Other Div will same where we need to put same CSS -->
-<section class="skills" id="skills">
- <div class="content">
-   <div class="title"><span>My Skills</span></div>
-   <div class="skills-details">
-     <div class="text">
-      <div class="topic">Skill</div>
-       <div class="topic" style="font-size: small;">(According to oxford dictionary)-noun.the ability to do something well.</div>
+    <!-- ======================================================Skills Section=========================================================-->
+   
     
-       <div class="experience">
-         <div class="num">23</div>
-         <div class="exp">Years Of <br> not having a Experience</div>
-       </div>
-     </div>
-     <div class="boxes">
-       <div class="box">
-         <div class="topic">Programming Language</div>
-         <div class="per">Python</div>
-       </div>
-       <div class="box">
-         <div class="topic">Graphics and UI/UX Designing</div>
-         <div class="per">Figma</div>
-       </div>
-       <div class="box">
-         <div class="topic">Motion Design</div>
-         <div class="per">After Effects</div>
-       </div>
-       <div class="box">
-         <div class="topic">Video Editing</div>
-         <div class="per">Davinchi Resolve</div>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
+    <section id="experience-skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience & Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter Mobile App</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Redux</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Html/css</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongo DB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL/ORACLE</h3>
+                </div>
+              </article>
+            </div>
+          </div>
 
-<!-- My Services Section Start -->
- <section class="services" id="services">
-   <div class="content">
-     <div class="title"><span>My Services</span></div>
-     <div class="boxes">
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-chart-line"></i>
-       </div>
-       <div class="topic">Data Scientist</div>
-       <p>Collecting, analyzing and interpreting data to help decision-making </p>
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-paint-brush"></i>
-       </div>
-       <div class="topic">Graphic Design</div>
-       <p>Making banners,posters,Ads,icons,logos etc</p>
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-pen"></i>
-       </div>
-       <div class="topic">Writting</div>
-       <p>Technical writting,writting blogs,articles etc</p>
-     </div>
-       <div class="box">
-         <div class="icon">
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-       </div>
-       <div class="topic">Motion Design</div>
-       <p>animated graphics for film and TV credits, advertising and digital marketing, website design, social media channels and more</p>
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-camera-retro"></i>
-       </div>
-       <div class="topic">Content creating</div>
-       <p>Digital contents for entertaining or educational material that caters to the interests and challenges of a target audience</p>
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-users"></i>
-       </div>
-       <div class="topic">Organizing Events and Manging Teams</div>
-       <p>Can effectively lead a team for any events to be done</p>
-     </div>
-   </div>
-   </div>
- </section>
 
-<!-- Contact Me section Start -->
-<section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Contact Me</span></div>
-    <div class="text">
-      <div class="topic">Want to see my works?</div>
-      <p>You can check out my github.The github link is given at top left corner</p>
-      <div class="button">
-        <button><a href="mailto:paudyal.gurab11@gmail.com" style="color: white;">Send email</a></button>
+          <div class="details-container">
+            <h2 class="experience-sub-title">UI/UX & Graphics/Motion Design</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>After Effects</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science and AI</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pyhton</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Analysis</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau/Power BI</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Computer Vision</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Version Control and Deployments</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git/Github</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Gitlab</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                </div>
+              </article>
+             
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Blog Writing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Technical Writing</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Content Creation</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Script/AD writting</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <!-- ======================================================Projects Section=========================================================-->
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/website.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Web Development Projects</h2>
+            <div class="btn-container">
+              <a href="webdev.html">
+                <button
+                  class="btn btn-color-2 project-btn"
+                >
+                  See Projects
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Mobile App Projects</h2>
+            <div class="btn-container">
+              <a href="mobileapps.html">
+                <button
+                  class="btn btn-color-2 project-btn"
+                >
+                  See Projects
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/uiuix.jpeg"
+                alt="Project 3"
+                class="project-img"
+              
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Design Projects</h2>
+            <div class="btn-container">
+              <a href="designworks.html">
+                <button
+                  class="btn btn-color-2 project-btn"
+                >
+                  See Designs
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ai.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Science and AI Projects</h2>
+            <div class="btn-container">
+              <a href="datascience.html">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                See Projects
+              </button>
+            </a>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/blog.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Blogs and Articles</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://medium.com/@paudyal.gaurab11'"
+              >
+                Read Here
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/editvideo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Video Editings and Content Creation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/@gaurabpaudyal'"
+              >
+                Watch Here
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+<!-- ======================================================Awards Section=========================================================-->
+
+
+<section id="awards">
+  <p class="section__text__p1">Achivements</p>
+  <h1 class="title">Awards and Certifiactions</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/iit1.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+          <img
+            src="./assets/iit2.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+          <img
+            src="./assets/iit3.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Coding Compettion at IIT Bombay India</h2>
+        <div class="btn-container">
+          
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/ugc4.jpg"
+            alt="Project 2"
+            class="project-img"
+          />
+          <img
+            src="./assets/ugc3.jpg"
+            alt="Project 2"
+            class="project-img"
+          />
+          <img
+            src="./assets/ugc2.jpg"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">4 weeks Techonprenaurship Tranning and Pitch</h2>
+        <div class="btn-container">
+          
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/gaurab_hult.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+          <img
+            src="./assets/hult2.JPG"
+            alt="Project 3"
+            class="project-img"
+          />
+          <img
+            src="./assets/hult3.JPG"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Hult Prize at NCIT by UN</h2>
+        <div class="btn-container">
+          
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/nosk1.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+          <img
+            src="./assets/nosk2.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+          <img
+            src="./assets/nosk3.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Nepal Open Source Klub,NCIT</h2>
+        <div class="btn-container">
+         
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/sfd1.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+          <img
+            src="./assets/sfd2.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+          <img
+            src="./assets/sfd3.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Software Freedom Day</h2>
+        <div class="btn-container">
+          
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/ncithackfest.jpg"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Hackathons and Hackfests</h2>
+        <div class="btn-container">
+          
+        </div>
       </div>
     </div>
   </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='#contact'"
+  />
 </section>
 
-<!-- Footer Section Start -->
-<footer>
-  <div class="text">
-    <span>Gaurab Paudyal! <a href="#">Thank you</a>
-  </div>
-</footer>
 
-  <script src="script.js"></script>
-</body>
+
+<!-- ======================================================Contact Forum Section=========================================================-->
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <form id="contact-form">
+        <div id="textfields">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button class="btn btn-color-2 project-btn" type="submit">Send</button>
+      </div>
+      </form>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/gaurabpaudyal">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/paudyal_jr">Instagram</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.github.com/grbpdl">Github</a></p>
+        </div>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/chess.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.chess.com/member/gaurabpaudyal">Chess Game</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/mic.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://happyclub.com.np/album/garo-cha-gaurab-standup-comedy-show-14th-july23/">Standup Comdey</a></p>
+        </div>
+      </div>
+    </section> 
+    <!-- ======================================================Footer Section=========================================================-->
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience-skills">Experience & Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Gaurab Paudyal. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js">
+      (function() {
+    emailjs.init('YOUR_USER_ID');
+  })();
+    </script>
+  </body>
 </html>
