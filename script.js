@@ -15,3 +15,4 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       alert('Oops! Something went wrong.');
     });
 });
+
