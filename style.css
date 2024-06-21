@@ -148,7 +148,6 @@ a:hover {
 /* SECTIONS */
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -368,6 +367,7 @@ article .icon {
 .project-title {
   margin: 1rem;
   color: black;
+  font-size: small;
 }
 
 .project-btn {
@@ -623,4 +623,13 @@ footer p {
   align-items: center;
   justify-content: center;
   border:solid black 1px;
+}
+
+.award-container{
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
 }
