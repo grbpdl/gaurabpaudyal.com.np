@@ -299,8 +299,11 @@ section {
 }
 
 .section-container {
+  display: flex;
+  align-items: center;
   gap: 4rem;
   height: 80%;
+  justify-content: center;
 }
 
 .section__pic-container {
