@@ -1,40 +1,38 @@
-export const projectsData = [
+﻿export const projectsData = [
   {
-    title: "Tiger-Detection-and-Early-Warning-System",
+    title: "Service Bus",
     description:
-      "The BaagVaag-Tiger Alert System (TAS) is aimed at tackling the ongoing confrontations between humans and tigers, particularly around Nepal’s Bardiya National Park and similar areas where many killings has occurred due to tiger attacks. This system utilizes Raspberry Pi equipped with camera sensors to monitor designated areas and identify tigers in real time relying on the Computer Vision AI model specifically Convolution Neural Network (CNN) that is trained to identify tigers from other wildlife. This detection triggers a series of immediate alerts, seamlessly delivered through a mobile application to both locals and wildlife authorities. The mobile application is further designed to engage local communities where the users can access important information about tigers, report sightings, and contribute to the overall effort. By integrating with Map API, TAS also helps users understand where tiger threats are most prevalent, enabling them to take proactive measures.",
+      "A fully E-governance and automation system that provides digitization of all governmental workflows of Nepal. Implemented with modular monolith architecture in NestJS, featuring GraphQL APIs, RabbitMQ message broker, and Next.js frontend with feature-first architecture.",
     image:
-      "https://res.cloudinary.com/dazmdsylh/image/upload/v1748621038/tiger_sqgibx.jpg",
-    tags: ["React", "Django", "Flutter", "PostgreSQL", "CNN", "IOT"],
-    category: ["final year Project", "Full Stack", "AI"],
+      "https://res.cloudinary.com/dazmdsylh/image/upload/v1748617116/convocation_myjibz.jpg",
+    tags: ["NestJS", "Next.js", "GraphQL", "RabbitMQ", "PostgreSQL", "DevOps"],
+    category: ["E-Governance", "Full Stack", "Microservices"],
     detailLink: "#",
-    liveLink:
-      "https://github.com/grbpdl/Tiger-Detection-and-Early-Warning-System-Website-Frontend",
+    liveLink: "https://servicebus.palikaportal.com",
     githubLink: "https://github.com/grbpdl",
   },
   {
-    title: "Event-Management-System-subhakarya",
+    title: "Connect Kisan",
     image:
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616545/subhakaryalogo_rli0tb.png",
     description:
-      "This is a MERN Stack based project.Basically this project is focused on making the auspicious events that are specially on our nepalease traditons like Marriage Ceronomy,Pujas etc. This event management project will have all the requirements that are necessary to conduct an event in a well planned and organized structure. After the user logins then he/she will be able to select the type of event to be conducted and the user will be provided with the venue, music system, videographer and photographer, priest, all the materials required for that event etc. The user can easily track the event and plan it in very structured and planned manner. User can filter the search according the nearest location for venue, priest, videographer,shops to buy required materials and many other things. The service provider can also register themselves as a freelancing job selecting their location and other necessary details. There will also be a messaging between the customer and the service provider.",
-    tags: ["Next.js", "Node.js", "MongoDB", "JavaScript", "Tailwind CSS"],
-    category: ["Web Development", "Full Stack", "MERN"],
+      "A digital solution that bridges the gap between farmers and markets while providing comprehensive farming knowledge. Built robust RESTful APIs using Express.js, Next.js frontend with Nepali localization, FCM push notifications, and AI chatbot for farmer support.",
+    tags: ["Express.js", "Next.js", "MongoDB", "AI Chatbot", "FCM", "Localization"],
+    category: ["AgriTech", "Full Stack", "Web & Mobile"],
     detailLink: "#",
-    liveLink: "https://github.com/grbpdl/Event-Management-System-subhakarya-",
+    liveLink: "https://connectkisan.com",
     githubLink: "https://github.com/grbpdl",
   },
-
   {
-    title: "Auth in NEXT js",
+    title: "Digital Profiling",
     description:
-      "A authentication in NEXT js and also with the unit test cases wirtten.",
+      "A digital information and profile system of municipalities with comprehensive graphs and insights for planning and tracking. Handled bulky census data with efficient query optimizations, implemented complex data visualizations, and optimized database queries for large datasets.",
     image:
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616537/experience_hqkjp1.png",
-    tags: ["Next", "Auth", "JWT", "JavaScript"],
-    category: ["Next", "Auth"],
+    tags: ["PostgreSQL", "Data Visualization", "Analytics", "Next.js", "TypeScript"],
+    category: ["Government", "Data Analytics", "Full Stack"],
     detailLink: "#",
-    liveLink: "https://github.com/grbpdl/authentication-in-next",
+    liveLink: "https://lalbandi.profiling.cliffbyte.com",
     githubLink: "https://github.com/grbpdl",
   },
 ];

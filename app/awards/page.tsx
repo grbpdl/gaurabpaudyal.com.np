@@ -5,11 +5,11 @@ import ImageCarousel from "@/components/image-carousel";
 
 const awards = [
   {
-    title: "Coding Compettion at IIT Bombay India",
-    organization: "IIT Bombay",
-    date: "December 2023",
+    title: "AWS Certification for Cloud Computing Foundations",
+    organization: "Amazon Web Services",
+    date: "2024",
     description:
-      "Took Part in CodeDecode Compettion held in India by being selected in regional level in Nepal",
+      "Certified in AWS Cloud Computing Foundations, demonstrating expertise in cloud infrastructure, deployment, and management. This certification validates my knowledge of scalable cloud solutions and DevOps practices.",
     images: [
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616535/iit1_xag1w4.jpg",
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616537/iit3_zrxm8v.jpg",
@@ -17,11 +17,23 @@ const awards = [
     ],
   },
   {
-    title: "4 weeks Techonprenaurship Tranning and Pitch",
-    organization: "University Grants Commision",
-    date: "July 2023",
+    title: "CodeCode Regional Competition Selection",
+    organization: "IIT Bombay",
+    date: "December 2023",
     description:
-      "An Techonprenaurship traning and the idea pitch session of your own startup.",
+      "Selected for CodeCode Regional Competition in Nepal and sent to participate at IIT Bombay, India. This recognition highlights my technical problem-solving skills and competitive programming capabilities.",
+    images: [
+      "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616535/iit1_xag1w4.jpg",
+      "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616537/iit3_zrxm8v.jpg",
+      "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616536/iit2_hpfkei.jpg",
+    ],
+  },
+  {
+    title: "40+ Hours Technopreneurship Training",
+    organization: "NCIT Incubator",
+    date: "2023",
+    description:
+      "Completed comprehensive 40+ hours technopreneurship training at NCIT Incubator. Gained practical knowledge on startup ideation, business model development, pitching, and entrepreneurial mindset development.",
     images: [
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1718263428/photo_2023-12-09_14-38-48_r66vmj.jpg",
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1718263425/photo_2023-12-09_14-38-37_e1eies.jpg",
@@ -29,27 +41,15 @@ const awards = [
     ],
   },
   {
-    title: "Hult Prize at NCIT by UN",
-    organization: "United Nations",
+    title: "Hult Prize Finalist and PR Team Member",
+    organization: "United Nations / Hult Prize Foundation",
     date: "December 2022",
     description:
-      "Participated in Hult Prize at Ncit,UN as well as worked in its Organizing Committee.",
+      "Finalist at Hult Prize competition at NCIT and served as PR team member in the organizing committee. Demonstrated leadership, social impact thinking, and organizational skills in this prestigious global competition.",
     images: [
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616538/hult2_aritch.jpg",
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616534/hult1_gkdydi.jpg",
       "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616547/hult3_rgoe2b.jpg",
-    ],
-  },
-  {
-    title: "Nepal Open Source Club",
-    organization: "NOSK",
-    date: "September 2022",
-    description:
-      "Promoting Open Source Software as well as Software Freedom Day in College through an IT club NOSK.",
-    images: [
-      "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616545/sfd2_jftqhd.jpg",
-      "https://res.cloudinary.com/dazmdsylh/image/upload/v1718263439/photo_2023-12-09_14-38-58_myutfe.jpg",
-      "https://res.cloudinary.com/dazmdsylh/image/upload/v1718263353/IMG_20220722_163347_1_z1v63d.jpg",
     ],
   },
 ];
@@ -107,3 +107,4 @@ export default function AwardsPage() {
     </div>
   );
 }
+

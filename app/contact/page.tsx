@@ -65,7 +65,7 @@ export default function ContactPage() {
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <h3 className="text-base font-semibold">Location</h3>
-                    <p className="text-muted-foreground">Imadol,Lalitpur</p>
+                    <p className="text-muted-foreground">Kathmandu, Nepal</p>
                     <p className="text-muted-foreground">
                       Available for remote work worldwide
                     </p>

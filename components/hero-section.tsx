@@ -15,10 +15,10 @@ export function HeroSection() {
   });
 
   const stats = [
-    { number: 2, label: "Years Experience" },
-    { number: 23, label: "Projects Completed" },
-    { number: 7, label: "Happy Clients" },
-    { number: 6, label: "Awards and Collaborations" },
+    { number: 3, label: "Years Experience" },
+    { number: 25, label: "Projects Completed" },
+    { number: 10, label: "Happy Clients" },
+    { number: 5, label: "Certifications & Awards" },
   ];
 
   return (

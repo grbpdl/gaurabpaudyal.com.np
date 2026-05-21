@@ -22,15 +22,19 @@ export default function AboutPage() {
                 About Me
               </h1>
               <p className="text-muted-foreground text-lg mb-6">
-                Full Stack Web Developer and Computer Engineering graduate with
-                a strong focus on building scalable web applications and
-                dynamic, user-friendly interfaces.
+                Full Stack Engineer with DevOps expertise and Computer
+                Engineering graduate with 3+ years of hands-on experience
+                building scalable systems from scratch to deployment.
+                Specializing in microservice architectures, responsive user
+                interfaces, and containerization using Docker and CI/CD
+                automation with GitHub Actions.
               </p>
               <p className="text-muted-foreground text-lg mb-6">
-                Passionate about crafting clean, maintainable code and intuitive
-                digital solutions. When not coding, I enjoy exploring new
-                technologies, hiking, and contributing to open-source
-                communities.
+                Leading teams as a full stack engineer and DevOps specialist, I
+                focus on building robust, scalable solutions for multiple
+                domains. Passionate about clean code, system architecture, and
+                continuous integration. When not coding, I explore new
+                technologies and contribute to open-source communities.
               </p>
               <Button asChild>
                 <Link href="/contact">
@@ -62,25 +66,25 @@ export default function AboutPage() {
               <Timeline
                 items={[
                   {
+                    title: "Full Stack Engineer (DevOps Focus)",
+                    company: "Information Care Pvt Ltd",
+                    duration: "Aug 2025 - Present",
+                    description:
+                      "Leading as a full stack software developer and DevOps engineer. Implementing CI/CD pipelines, Dockerization, managing Digital Ocean infrastructure, and orchestrating deployment of multiple production projects.",
+                  },
+                  {
                     title: "Full Stack Developer",
                     company: "Tootle (Nepal's First Ride Sharing Company)",
-                    duration: "August 2024 - Present",
+                    duration: "Aug 2024 - Jun 2025",
                     description:
-                      "Implemented microservice architecture and monorepo structure to scale systems handling thousands of concurrent users and millions of API requests.",
+                      "Designed and maintained scalable systems using microservice architecture and monorepo structure handling thousands of concurrent users and millions of API requests efficiently.",
                   },
                   {
                     title: "Full Stack Developer",
-                    company: "Lyara Innovations (Remote Work)",
-                    duration: "Feb 2024 - June 2024",
+                    company: "Yaks Inc",
+                    duration: "Sep 2023 - Jun 2024",
                     description:
-                      "Used MERN stack to develop and Dockerize projects, and conducted QA testing to ensure high reliability.",
-                  },
-                  {
-                    title: "Freelance Developer",
-                    company: "Upwork",
-                    duration: "July 2023 - Feb 2024",
-                    description:
-                      "Built an e-commerce platform, integrated APIs, optimized databases, and designed modern, responsive UIs for various client projects.",
+                      "Designed and developed multiple projects in MERN stack. Implemented robust state management solutions and integrated RESTful APIs with optimized architecture for better performance.",
                   },
                 ]}
               />
@@ -93,9 +97,9 @@ export default function AboutPage() {
                     title: "Bachelors in Computer Engineering",
                     company:
                       "Nepal College of Information Technology, Lalitpur",
-                    duration: "2019 - 2024",
+                    duration: "Jun 2019 - Jun 2024",
                     description:
-                      "Graduated with an SGPA of 3.95/4. Specialized in full stack development and backend architecture.",
+                      "Graduated with an SGPA of 3.82/4. Specialized in full stack development, microservice architecture, and backend systems design.",
                   },
                   {
                     title: "Higher Secondary Education (XII)",
