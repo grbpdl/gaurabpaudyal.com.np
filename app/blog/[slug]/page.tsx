@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { blogsData } from "@/data/blogs";
+import { BlogPostSchema } from "@/components/blog-post-schema";
 
 export async function generateStaticParams() {
   return blogsData.map((post) => ({
@@ -25,9 +26,39 @@ export function generateMetadata({
     };
   }
 
+  const url = `https://gaurabpaudyal.com.np/blog/${post.slug}`;
+
   return {
-    title: `${post.title} |Gaurab Paudyal`,
+    title: `${post.title} | Gaurab Paudyal`,
     description: post.excerpt,
+    keywords: ["Blog", post.title, "Web Development", ...post.categories],
+    authors: [{ name: "Gaurab Paudyal" }],
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      url,
+      authors: ["Gaurab Paudyal"],
+      publishedTime: post.date,
+      tags: post.categories,
+      images: [
+        {
+          url: post.coverImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.coverImage],
+    },
+    alternates: {
+      canonical: url,
+    },
   };
 }
 
@@ -103,90 +134,93 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   `;
 
   return (
-    <div className="flex flex-col gap-12 pb-16 pt-24 sm:pt-32">
-      <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <Button variant="ghost" size="sm" asChild className="mb-8">
-            <Link href="/blog">
-              <ArrowLeft className="mr-2 h-4 w-4" /> Back to Blog
-            </Link>
-          </Button>
+    <>
+      <BlogPostSchema post={post} slug={params.slug} />
+      <div className="flex flex-col gap-12 pb-16 pt-24 sm:pt-32">
+        <div className="container px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <Button variant="ghost" size="sm" asChild className="mb-8">
+              <Link href="/blog">
+                <ArrowLeft className="mr-2 h-4 w-4" /> Back to Blog
+              </Link>
+            </Button>
 
-          <div className="mb-6">
-            <div className="flex flex-wrap gap-2 mb-4">
-              {post.categories.map((category) => (
-                <Badge key={category} variant="secondary">
-                  {category}
-                </Badge>
-              ))}
+            <div className="mb-6">
+              <div className="flex flex-wrap gap-2 mb-4">
+                {post.categories.map((category) => (
+                  <Badge key={category} variant="secondary">
+                    {category}
+                  </Badge>
+                ))}
+              </div>
+
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+                {post.title}
+              </h1>
+
+              <div className="flex items-center gap-6 text-muted-foreground mb-6">
+                <div className="flex items-center">
+                  <Calendar className="mr-2 h-4 w-4" />
+                  <span>{post.date}</span>
+                </div>
+                <div className="flex items-center">
+                  <Clock className="mr-2 h-4 w-4" />
+                  <span>{post.readTime} min read</span>
+                </div>
+              </div>
             </div>
 
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
-              {post.title}
-            </h1>
-
-            <div className="flex items-center gap-6 text-muted-foreground mb-6">
-              <div className="flex items-center">
-                <Calendar className="mr-2 h-4 w-4" />
-                <span>{post.date}</span>
-              </div>
-              <div className="flex items-center">
-                <Clock className="mr-2 h-4 w-4" />
-                <span>{post.readTime} min read</span>
-              </div>
+            <div className="mb-10 overflow-hidden rounded-lg border">
+              <img
+                src={post.coverImage}
+                alt={post.title}
+                className="w-full h-full object-cover aspect-[2/1]"
+              />
             </div>
-          </div>
 
-          <div className="mb-10 overflow-hidden rounded-lg border">
-            <img
-              src={post.coverImage}
-              alt={post.title}
-              className="w-full h-full object-cover aspect-[2/1]"
-            />
-          </div>
+            <article className="prose prose-stone dark:prose-invert max-w-none">
+              <div dangerouslySetInnerHTML={{ __html: articleContent }} />
+            </article>
 
-          <article className="prose prose-stone dark:prose-invert max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: articleContent }} />
-          </article>
+            <Separator className="my-12" />
 
-          <Separator className="my-12" />
-
-          <div>
-            <h3 className="text-xl font-bold mb-6">Related Articles</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {blogsData
-                .filter((p) => p.slug !== post.slug)
-                .slice(0, 2)
-                .map((relatedPost, index) => (
-                  <Link
-                    key={index}
-                    href={`/blog/${relatedPost.slug}`}
-                    className="group"
-                  >
-                    <div className="flex gap-4">
-                      <div className="h-20 w-20 rounded overflow-hidden flex-shrink-0">
-                        <img
-                          src={relatedPost.coverImage}
-                          alt={relatedPost.title}
-                          className="h-full w-full object-cover"
-                        />
-                      </div>
-                      <div>
-                        <h4 className="font-medium group-hover:text-primary transition-colors line-clamp-2">
-                          {relatedPost.title}
-                        </h4>
-                        <div className="flex items-center text-xs text-muted-foreground mt-1">
-                          <Calendar className="mr-1 h-3 w-3" />
-                          <span>{relatedPost.date}</span>
+            <div>
+              <h3 className="text-xl font-bold mb-6">Related Articles</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {blogsData
+                  .filter((p) => p.slug !== post.slug)
+                  .slice(0, 2)
+                  .map((relatedPost, index) => (
+                    <Link
+                      key={index}
+                      href={`/blog/${relatedPost.slug}`}
+                      className="group"
+                    >
+                      <div className="flex gap-4">
+                        <div className="h-20 w-20 rounded overflow-hidden flex-shrink-0">
+                          <img
+                            src={relatedPost.coverImage}
+                            alt={relatedPost.title}
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                        <div>
+                          <h4 className="font-medium group-hover:text-primary transition-colors line-clamp-2">
+                            {relatedPost.title}
+                          </h4>
+                          <div className="flex items-center text-xs text-muted-foreground mt-1">
+                            <Calendar className="mr-1 h-3 w-3" />
+                            <span>{relatedPost.date}</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </Link>
-                ))}
+                    </Link>
+                  ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

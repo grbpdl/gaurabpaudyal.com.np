@@ -1,0 +1,22 @@
+# Robots.txt for Gaurab Paudyal Portfolio
+# Allow all search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /*.json$
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Specific rules for popular search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay (optional - request crawling not too aggressively)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://gaurabpaudyal.com.np/sitemap.xml

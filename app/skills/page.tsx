@@ -2,7 +2,38 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Skills | Gaurab Paudyal",
-  description: "Explore my technical skills, tools, and areas of expertise",
+  description:
+    "Comprehensive overview of technical skills including JavaScript, TypeScript, React, Next.js, NestJS, GraphQL, Docker, CI/CD, DevOps, and more.",
+  keywords: [
+    "Skills",
+    "Full Stack Development",
+    "Frontend Skills",
+    "Backend Skills",
+    "DevOps",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "NestJS",
+    "Docker",
+    "GraphQL",
+  ],
+  openGraph: {
+    title: "Skills & Expertise | Gaurab Paudyal",
+    description:
+      "Expert in full stack development: React, Next.js, NestJS, GraphQL, Docker, CI/CD, and microservices architecture.",
+    type: "website",
+    url: "https://gaurabpaudyal.com.np/skills",
+  },
+  twitter: {
+    card: "summary",
+    title: "Skills & Expertise | Gaurab Paudyal",
+    description:
+      "Full stack developer skilled in modern web technologies and DevOps practices.",
+  },
+  alternates: {
+    canonical: "https://gaurabpaudyal.com.np/skills",
+  },
 };
 
 const skillCategories = [

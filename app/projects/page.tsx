@@ -4,7 +4,35 @@ import { ProjectGrid } from "@/components/project-grid";
 
 export const metadata: Metadata = {
   title: "Projects | Gaurab Paudyal",
-  description: "Explore my portfolio of web development and design projects",
+  description:
+    "Portfolio of projects including Service Bus e-governance platform, Connect Kisan AgriTech, and Digital Profiling municipality analytics system built with modern technologies.",
+  keywords: [
+    "Projects",
+    "Portfolio",
+    "Web Development",
+    "Full Stack Projects",
+    "NestJS",
+    "Next.js",
+    "GraphQL",
+    "E-Governance",
+    "AgriTech",
+  ],
+  openGraph: {
+    title: "Projects | Gaurab Paudyal",
+    description:
+      "Explore my full stack development projects: Service Bus, Connect Kisan, and Digital Profiling. Built with NestJS, Next.js, GraphQL, and modern DevOps practices.",
+    type: "website",
+    url: "https://gaurabpaudyal.com.np/projects",
+  },
+  twitter: {
+    card: "summary",
+    title: "Projects | Gaurab Paudyal",
+    description:
+      "Full stack projects showcasing expertise in e-governance, AgriTech, and data analytics.",
+  },
+  alternates: {
+    canonical: "https://gaurabpaudyal.com.np/projects",
+  },
 };
 
 export default function ProjectsPage() {

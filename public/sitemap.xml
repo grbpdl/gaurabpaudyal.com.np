@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dazmdsylh/image/upload/v1748617116/convocation_myjibz.jpg</image:loc>
+      <image:title>Gaurab Paudyal - Full Stack Engineer</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/about</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills Page -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/skills</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Projects Page -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/projects</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>bi-weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Project Details - Service Bus -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/projects/service-bus</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dazmdsylh/image/upload/v1748617116/convocation_myjibz.jpg</image:loc>
+      <image:title>Service Bus - E-Governance Platform</image:title>
+    </image:image>
+  </url>
+
+  <!-- Project Details - Connect Kisan -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/projects/connect-kisan</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dazmdsylh/image/upload/v1748616545/subhakaryalogo_rli0tb.png</image:loc>
+      <image:title>Connect Kisan - AgriTech Platform</image:title>
+    </image:image>
+  </url>
+
+  <!-- Project Details - Digital Profiling -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/projects/digital-profiling</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dazmdsylh/image/upload/v1748616537/experience_hqkjp1.png</image:loc>
+      <image:title>Digital Profiling - Municipality Analytics</image:title>
+    </image:image>
+  </url>
+
+  <!-- Awards Page -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/awards</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/blog</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/blog/building-accessible-web-applications</loc>
+    <lastmod>2024-05-15</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://gaurabpaudyal.com.np/blog/state-management-in-react</loc>
+    <lastmod>2024-04-28</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://gaurabpaudyal.com.np/blog/optimizing-website-performance</loc>
+    <lastmod>2024-04-10</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://gaurabpaudyal.com.np/blog/building-design-system-from-scratch</loc>
+    <lastmod>2024-03-22</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://gaurabpaudyal.com.np/blog/getting-started-with-typescript-in-2024</loc>
+    <lastmod>2024-03-05</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://gaurabpaudyal.com.np/blog/future-of-web-development-trends-to-watch-in-2025</loc>
+    <lastmod>2024-02-18</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://gaurabpaudyal.com.np/contact</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

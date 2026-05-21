@@ -5,7 +5,33 @@ import { blogsData } from "@/data/blogs";
 export const metadata: Metadata = {
   title: "Blog | Gaurab Paudyal",
   description:
-    "Articles, tutorials, and thoughts on web development, design, and technology",
+    "Read articles about web development, full stack development, performance optimization, design systems, TypeScript, and future web development trends.",
+  keywords: [
+    "Blog",
+    "Web Development",
+    "Full Stack Development",
+    "Performance",
+    "Design Systems",
+    "React",
+    "TypeScript",
+    "State Management",
+  ],
+  openGraph: {
+    title: "Blog | Gaurab Paudyal",
+    description:
+      "Articles on web development best practices, full stack technologies, and performance optimization.",
+    type: "website",
+    url: "https://gaurabpaudyal.com.np/blog",
+  },
+  twitter: {
+    card: "summary",
+    title: "Blog | Gaurab Paudyal",
+    description:
+      "Read my latest articles on web development and technology trends.",
+  },
+  alternates: {
+    canonical: "https://gaurabpaudyal.com.np/blog",
+  },
 };
 
 export default function BlogPage() {

@@ -8,7 +8,38 @@ import { Timeline } from "@/components/timeline";
 
 export const metadata: Metadata = {
   title: "About | Gaurab Paudyal",
-  description: "Learn more about my background, experience, and expertise",
+  description:
+    "Learn more about my background, 3+ years of full stack development experience, DevOps expertise, education, and professional philosophy.",
+  keywords: [
+    "About Gaurab Paudyal",
+    "Full Stack Engineer",
+    "DevOps Experience",
+    "Software Developer",
+  ],
+  openGraph: {
+    title: "About Gaurab Paudyal | Full Stack Engineer",
+    description:
+      "3+ years of experience building scalable systems, microservices architecture, and DevOps solutions. Currently leading at Information Care Pvt Ltd.",
+    type: "profile",
+    url: "https://gaurabpaudyal.com.np/about",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dazmdsylh/image/upload/v1748616541/gaurab_hult_ceuk2c.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gaurab Paudyal",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Gaurab Paudyal",
+    description:
+      "Full Stack Engineer with 3+ years of experience in scalable systems, microservices, and DevOps.",
+  },
+  alternates: {
+    canonical: "https://gaurabpaudyal.com.np/about",
+  },
 };
 
 export default function AboutPage() {
