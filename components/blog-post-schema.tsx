@@ -12,13 +12,13 @@ export function BlogPostSchema({ post, slug }: BlogPostSchemaProps) {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
-    description: post.excerpt,
-    image: post.coverImage,
+    description: post.description || post.content.substring(0, 160),
+    image: post.cover,
     datePublished: post.date,
     dateModified: post.date,
     author: {
       "@type": "Person",
-      name: "Gaurab Paudyal",
+      name: post.author || "Gaurab Paudyal",
       url: "https://gaurabpaudyal.com.np",
     },
     publisher: {
@@ -30,7 +30,7 @@ export function BlogPostSchema({ post, slug }: BlogPostSchemaProps) {
       "@type": "WebPage",
       "@id": url,
     },
-    keywords: post.categories.join(", "),
+    keywords: post.tags?.join(", ") || "",
     articleBody: post.content,
   };
 

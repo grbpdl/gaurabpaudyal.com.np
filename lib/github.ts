@@ -10,7 +10,7 @@ import {
   BlogFrontmatter,
 } from "@/types";
 import matter from "gray-matter";
-import { readingTime } from "reading-time";
+import readingTime from "reading-time";
 
 const GITHUB_API_BASE = "https://api.github.com";
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;

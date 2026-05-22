@@ -4,6 +4,7 @@ import { BlogCard } from "@/components/blog-card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { AlertCircle } from "lucide-react";
 import { Suspense } from "react";
+import { blogsData } from "@/data/blogs";
 
 export const metadata: Metadata = {
   title: "Blog | Gaurab Paudyal",
@@ -40,39 +41,42 @@ export const metadata: Metadata = {
 /**
  * Blog Listing Page
  * Fetches all blog posts from GitHub repository and displays them
+ * Falls back to static data if GitHub is not configured
  */
 async function BlogList() {
+  let blogs;
+
   try {
-    const blogs = await getAllBlogs();
-
-    if (!blogs || blogs.length === 0) {
-      return (
-        <div className="text-center py-12">
-          <p className="text-neutral-600 dark:text-neutral-400">
-            No blog posts found yet. Check back soon!
-          </p>
-        </div>
-      );
+    // Try to fetch from GitHub if configured
+    if (isGitHubConfigured()) {
+      blogs = await getAllBlogs();
     }
+  } catch (error) {
+    console.warn("Error fetching blogs from GitHub:", error);
+  }
 
+  // Fallback to static data if GitHub fetch failed or is not configured
+  if (!blogs || blogs.length === 0) {
+    blogs = blogsData;
+  }
+
+  if (!blogs || blogs.length === 0) {
     return (
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {blogs.map((blog) => (
-          <BlogCard key={blog.slug} blog={blog} />
-        ))}
+      <div className="text-center py-12">
+        <p className="text-neutral-600 dark:text-neutral-400">
+          No blog posts found yet. Check back soon!
+        </p>
       </div>
     );
-  } catch (error) {
-    console.error("Error loading blogs:", error);
-    return (
-      <Alert variant="destructive">
-        <AlertCircle className="h-4 w-4" />
-        <AlertDescription>
-          Failed to load blog posts. Please try again later.
-        </AlertDescription>
-      </Alert>
-    );
   }
+
+  return (
+    <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {blogs.map((blog) => (
+        <BlogCard key={blog.slug} blog={blog} />
+      ))}
+    </div>
+  );
 }
 
 /**

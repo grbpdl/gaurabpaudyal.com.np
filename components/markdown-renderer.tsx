@@ -29,17 +29,29 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
                 <div className="bg-neutral-200 dark:bg-neutral-700 h-64 rounded" />
               );
 
+            // Check if src is a string (not a Blob)
+            if (typeof src === "string") {
+              return (
+                <div className="relative h-auto w-full">
+                  <Image
+                    src={src}
+                    alt={alt || "Blog image"}
+                    width={800}
+                    height={400}
+                    className="rounded-lg"
+                    priority={false}
+                  />
+                </div>
+              );
+            }
+
+            // Fallback for non-string sources (Blob, etc)
             return (
-              <div className="relative h-auto w-full">
-                <Image
-                  src={src}
-                  alt={alt || "Blog image"}
-                  width={800}
-                  height={400}
-                  className="rounded-lg"
-                  priority={false}
-                />
-              </div>
+              <img
+                src={URL.createObjectURL(src as Blob)}
+                alt={alt || "Blog image"}
+                className="rounded-lg w-full h-auto"
+              />
             );
           },
 
