@@ -15,29 +15,10 @@ import { blogsData } from "@/data/blogs";
 /**
  * Generate static parameters for all blog posts
  * Used for static generation of blog pages
- * Falls back to static data if GitHub is not configured
+ * Only uses static data for reliable pre-rendering
  */
 export async function generateStaticParams() {
-  try {
-    // If GitHub is configured, fetch from GitHub
-    if (isGitHubConfigured()) {
-      try {
-        const slugs = await getAllBlogSlugs();
-        return slugs.map((slug) => ({
-          slug,
-        }));
-      } catch (error) {
-        console.warn(
-          "Failed to fetch blog slugs from GitHub, falling back to static data:",
-          error,
-        );
-      }
-    }
-  } catch (error) {
-    console.warn("Error checking GitHub configuration:", error);
-  }
-
-  // Fallback to static blog data
+  // Only use static blog data for pre-rendering to avoid broken GitHub blogs
   return blogsData.map((blog) => ({
     slug: blog.slug,
   }));
